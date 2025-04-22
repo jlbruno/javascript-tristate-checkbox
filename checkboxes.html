@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Tristate Checkbox Demo - New Implementation</title>
+</head>
+
+<body>
+
+<!-- abbreviation for zen coding to generate test html 	
+ul.tristate>li>input[type="checkbox"]+label{checkbox}+ul>li*2>input[type="checkbox"]+label{checkbox}+ul>li*2>input[type="checkbox"]+label{checkbox}+ul>li*2>input[type="checkbox"]+label{checkbox}
+-->
+
+<ul class="tristate">
+	<li>
+		<input type="checkbox" />
+		<label for="">checkbox</label>
+		<ul>
+			<li>
+				<input type="checkbox" />
+				<label for="">checkbox</label>
+				<ul>
+					<li>
+						<input type="checkbox" />
+						<label for="">checkbox</label>
+						<ul>
+							<li><input type="checkbox" checked /><label for="">checkbox</label></li>
+							<li><input type="checkbox" checked /><label for="">checkbox</label></li>
+						</ul>
+					</li>
+					<li>
+						<input type="checkbox" />
+						<label for="">checkbox</label>
+						<ul>
+							<li><input type="checkbox" /><label for="">checkbox</label></li>
+							<li><input type="checkbox" /><label for="">checkbox</label></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<input type="checkbox" />
+				<label for="">checkbox</label>
+				<ul>
+					<li>
+						<input type="checkbox" />
+						<label for="">checkbox</label>
+						<ul>
+							<li><input type="checkbox" checked /><label for="">checkbox</label></li>
+							<li><input type="checkbox" /><label for="">checkbox</label></li>
+						</ul>
+					</li>
+					<li>
+						<input type="checkbox" />
+						<label for="">checkbox</label>
+						<ul>
+							<li><input type="checkbox" /><label for="">checkbox</label></li>
+							<li><input type="checkbox" /><label for="">checkbox</label></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+</ul>
+
+<script src="tristate-checkbox.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    new TristateCheckbox('.tristate');
+  });
+</script>
+
+</body>
+</html>

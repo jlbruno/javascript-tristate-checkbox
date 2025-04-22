@@ -1,0 +1,5 @@
+/node_modules
+dist/tristate-checkbox.esm.js
+dist/tristate-checkbox.esm.js.map
+dist/tristate-checkbox.min.js
+dist/tristate-checkbox.min.js.map

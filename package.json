@@ -1,0 +1,38 @@
+{
+  "name": "tristate-checkbox",
+  "version": "2.0.0",
+  "description": "A vanilla JavaScript library for creating tristate checkboxes",
+  "main": "dist/tristate-checkbox.js",
+  "module": "dist/tristate-checkbox.esm.js",
+  "browser": "dist/tristate-checkbox.min.js",
+  "author": "Jeff Leombruno",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "benchmark": "node benchmarks/tristate-benchmark.js"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^8.19.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "benchmark": "^2.1.4",
+    "jest": "^29.3.1",
+    "jest-environment-jsdom": "^29.3.1",
+    "jsdom": "^26.1.0",
+    "microtime": "^3.1.1",
+    "vite": "^4.5.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "checkbox",
+    "tristate",
+    "indeterminate",
+    "vanilla-js"
+  ]
+}
